@@ -4,398 +4,294 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name — Creative CS</title>
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Syne:wght@700;800&family=Unbounded:wght@200;400;700&display=swap" rel="stylesheet">
-
-  <!-- Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- CUSTOM CURSOR -->
-  <div id="cursor"></div>
-  <div id="cursor-ring"></div>
+<div id="progress-bar"></div>
 
-  <!-- ══════════════════════════════════════════════
-       VERTICAL SIDE NAV
-  ══════════════════════════════════════════════ -->
-  <nav id="sidenav">
-    <a href="#hero" class="sidenav-logo">YN.DEV</a>
+<button id="theme-toggle" aria-label="Toggle dark mode">
+  <span class="toggle-icon">&#9790;</span>
+  <span class="toggle-label">dark mode</span>
+</button>
 
-    <ul class="sidenav-links">
-      <li><a href="#hero"     data-section="hero"     class="active">home</a></li>
-      <li><a href="#about"    data-section="about"                  >about</a></li>
-      <li><a href="#cv"       data-section="cv"                     >cv</a></li>
-      <li><a href="#skills"   data-section="skills"                 >skills</a></li>
-      <li><a href="#projects" data-section="projects"               >work</a></li>
-      <li><a href="#gallery"  data-section="gallery"                >art</a></li>
-      <li><a href="#contact"  data-section="contact"                >contact</a></li>
-    </ul>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
 
-    <div class="sidenav-dots">
-      <div class="sidenav-dot active" data-dot="hero"></div>
-      <div class="sidenav-dot"        data-dot="about"></div>
-      <div class="sidenav-dot"        data-dot="cv"></div>
-      <div class="sidenav-dot"        data-dot="skills"></div>
-      <div class="sidenav-dot"        data-dot="projects"></div>
-      <div class="sidenav-dot"        data-dot="gallery"></div>
-      <div class="sidenav-dot"        data-dot="contact"></div>
+<nav id="sidenav">
+  <a href="#hero" class="sidenav-logo">YN.DEV</a>
+  <ul class="sidenav-links">
+    <li><a href="#hero"     data-section="hero"     class="active">home</a></li>
+    <li><a href="#about"    data-section="about"    >about</a></li>
+    <li><a href="#cv"       data-section="cv"       >cv</a></li>
+    <li><a href="#skills"   data-section="skills"   >skills</a></li>
+    <li><a href="#projects" data-section="projects" >work</a></li>
+    <li><a href="#gallery"  data-section="gallery"  >art</a></li>
+    <li><a href="#contact"  data-section="contact"  >contact</a></li>
+  </ul>
+  <div class="sidenav-dots">
+    <div class="sidenav-dot active" data-dot="hero"></div>
+    <div class="sidenav-dot" data-dot="about"></div>
+    <div class="sidenav-dot" data-dot="cv"></div>
+    <div class="sidenav-dot" data-dot="skills"></div>
+    <div class="sidenav-dot" data-dot="projects"></div>
+    <div class="sidenav-dot" data-dot="gallery"></div>
+    <div class="sidenav-dot" data-dot="contact"></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-terminal" id="terminal-lines"></div>
+    <h1 class="hero-name">Your<br><em>Name</em><br>Here.</h1>
+    <p class="hero-tagline">I build things that live between code and creativity &mdash; from elegant algorithms to handcrafted visuals.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">View my work &darr;</a>
+      <a href="#contact" class="btn-ghost">Get in touch &rarr;</a>
     </div>
-  </nav>
+  </div>
+  <div class="hero-right">
+    <div class="floating-tag">// &lt;creative_coder /&gt;</div>
+    <div class="hero-photo-placeholder"></div>
+    <div class="floating-tag">&#10022; cs + art</div>
+    <div class="floating-tag">open to work &#9675;</div>
+  </div>
+</section>
 
-  <!-- ══════════════════════════════════════════════
-       HERO
-  ══════════════════════════════════════════════ -->
-  <section id="hero">
-    <div class="hero-left">
-      <p class="hero-eyebrow">// COMPUTER SCIENTIST · CREATIVE · MAKER</p>
-      <h1 class="hero-name">
-        Your<br><em>Name</em><br>Here.
-      </h1>
-      <p class="hero-tagline">
-        I build things that live between code and creativity — from elegant algorithms to handcrafted visuals.
-      </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn-primary">View my work ↓</a>
-        <a href="#contact"  class="btn-ghost">Get in touch →</a>
-      </div>
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">about me</div>
+  <div class="about-content">
+    <h2 class="reveal">I'm a computer scientist<br>who <span>can't stop</span> creating.</h2>
+    <p class="reveal reveal-delay-1">Hello! I'm <strong>Your Name</strong>, a CS student / developer based in [Your City]. I love the intersection where logic meets aesthetics &mdash; building software that not only works beautifully, but looks beautiful doing it.</p>
+    <p class="reveal reveal-delay-2">When I'm not writing code, I'm probably sketching, painting, playing music, or diving into some new creative rabbit hole. I believe the best technologists are the ones who see the world artistically.</p>
+    <p class="reveal reveal-delay-3">Currently studying at [Your University] / working at [Your Company]. Always open to interesting projects and conversations.</p>
+    <div class="about-chips reveal reveal-delay-4">
+      <span class="chip">Python</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">React</span>
+      <span class="chip">Machine Learning</span>
+      <span class="chip">Algorithms</span>
+      <span class="chip">Illustration</span>
+      <span class="chip">Photography</span>
+      <span class="chip">UI/UX</span>
+      <span class="chip">Music</span>
+      <span class="chip">Typography</span>
     </div>
+  </div>
+</section>
 
-    <div class="hero-right">
-      <div class="floating-tag">// &lt;creative_coder /&gt;</div>
-      <div class="hero-photo-placeholder"></div>
-      <div class="floating-tag">✦ cs + art</div>
-      <div class="floating-tag">open to work ◉</div>
+<!-- CV -->
+<section id="cv">
+  <div class="cv-inner">
+    <div class="cv-header reveal">
+      <h2>Curriculum <em>Vitae</em></h2>
+      <a href="cv.pdf" class="cv-download" download>&darr; Download PDF</a>
     </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════════
-       ABOUT
-  ══════════════════════════════════════════════ -->
-  <section id="about">
-    <div class="section-label">about me</div>
-
-    <div class="about-content">
-      <h2 class="reveal">
-        I'm a computer scientist<br>who <span>can't stop</span> creating.
-      </h2>
-      <p class="reveal reveal-delay-1">
-        Hello! I'm <strong>Your Name</strong>, a CS student / developer based in [Your City].
-        I love the intersection where logic meets aesthetics — building software that not only
-        works beautifully, but looks beautiful doing it.
-      </p>
-      <p class="reveal reveal-delay-2">
-        When I'm not writing code, I'm probably sketching, painting, playing music, or diving
-        into some new creative rabbit hole. I believe the best technologists are the ones who
-        see the world artistically.
-      </p>
-      <p class="reveal reveal-delay-3">
-        Currently studying at [Your University] / working at [Your Company].
-        Always open to interesting projects and conversations.
-      </p>
-      <div class="about-chips reveal reveal-delay-4">
-        <span class="chip">Python</span>
-        <span class="chip">JavaScript</span>
-        <span class="chip">React</span>
-        <span class="chip">Machine Learning</span>
-        <span class="chip">Algorithms</span>
-        <span class="chip">Illustration</span>
-        <span class="chip">Photography</span>
-        <span class="chip">UI/UX</span>
-        <span class="chip">Music</span>
-        <span class="chip">Typography</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════════
-       CV
-  ══════════════════════════════════════════════ -->
-  <section id="cv">
-    <div class="cv-inner">
-      <div class="cv-header reveal">
-        <h2>Curriculum <em>Vitae</em></h2>
-        <a href="cv.pdf" class="cv-download" download>↓ Download PDF</a>
-      </div>
-
-      <div class="cv-grid">
-        <!-- Education -->
-        <div class="cv-col reveal">
-          <p class="cv-col-title">// EDUCATION</p>
-
-          <div class="cv-entry">
-            <p class="cv-year">2022 — present</p>
-            <p class="cv-role">M.Sc. Computer Science</p>
-            <p class="cv-place">University of Your City</p>
-            <p class="cv-desc">Focus: Machine Learning &amp; Human-Computer Interaction. Thesis on generative models for creative applications.</p>
-          </div>
-
-          <div class="cv-entry">
-            <p class="cv-year">2019 — 2022</p>
-            <p class="cv-role">B.Sc. Computer Science</p>
-            <p class="cv-place">University of Your City</p>
-            <p class="cv-desc">Graduated with distinction. Minor in Digital Arts and Media Design.</p>
-          </div>
-
-          <div class="cv-entry">
-            <p class="cv-year">2024</p>
-            <p class="cv-role">Workshop / Certificate</p>
-            <p class="cv-place">Institute Name</p>
-            <p class="cv-desc">Short description of what you learned or achieved.</p>
-          </div>
+    <div class="cv-grid">
+      <div class="cv-col reveal">
+        <p class="cv-col-title">// EDUCATION</p>
+        <div class="cv-entry">
+          <p class="cv-year">2022 &mdash; present</p>
+          <p class="cv-role">M.Sc. Computer Science</p>
+          <p class="cv-place">University of Your City</p>
+          <p class="cv-desc">Focus: Machine Learning &amp; Human-Computer Interaction. Thesis on generative models for creative applications.</p>
         </div>
-
-        <!-- Experience -->
-        <div class="cv-col reveal reveal-delay-2">
-          <p class="cv-col-title">// EXPERIENCE</p>
-
-          <div class="cv-entry">
-            <p class="cv-year">2023 — present</p>
-            <p class="cv-role">Research Assistant</p>
-            <p class="cv-place">Lab / Institute Name</p>
-            <p class="cv-desc">Working on X, building Y, publishing Z. Collaborating with interdisciplinary team.</p>
-          </div>
-
-          <div class="cv-entry">
-            <p class="cv-year">Summer 2023</p>
-            <p class="cv-role">Software Engineering Intern</p>
-            <p class="cv-place">Company Name</p>
-            <p class="cv-desc">Developed feature X for product Y. Improved performance by Z%. Worked with React and Node.js.</p>
-          </div>
-
-          <div class="cv-entry">
-            <p class="cv-year">2021 — 2022</p>
-            <p class="cv-role">Freelance Designer &amp; Developer</p>
-            <p class="cv-place">Self-employed</p>
-            <p class="cv-desc">Designed and built websites for local businesses and artists. Brand identity, illustration, web dev.</p>
-          </div>
+        <div class="cv-entry">
+          <p class="cv-year">2019 &mdash; 2022</p>
+          <p class="cv-role">B.Sc. Computer Science</p>
+          <p class="cv-place">University of Your City</p>
+          <p class="cv-desc">Graduated with distinction. Minor in Digital Arts and Media Design.</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-year">2024</p>
+          <p class="cv-role">Workshop / Certificate</p>
+          <p class="cv-place">Institute Name</p>
+          <p class="cv-desc">Short description of what you learned or achieved.</p>
+        </div>
+      </div>
+      <div class="cv-col reveal reveal-delay-2">
+        <p class="cv-col-title">// EXPERIENCE</p>
+        <div class="cv-entry">
+          <p class="cv-year">2023 &mdash; present</p>
+          <p class="cv-role">Research Assistant</p>
+          <p class="cv-place">Lab / Institute Name</p>
+          <p class="cv-desc">Working on X, building Y, publishing Z. Collaborating with interdisciplinary team.</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-year">Summer 2023</p>
+          <p class="cv-role">Software Engineering Intern</p>
+          <p class="cv-place">Company Name</p>
+          <p class="cv-desc">Developed feature X for product Y. Improved performance by Z%. Worked with React and Node.js.</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-year">2021 &mdash; 2022</p>
+          <p class="cv-role">Freelance Designer &amp; Developer</p>
+          <p class="cv-place">Self-employed</p>
+          <p class="cv-desc">Designed and built websites for local businesses and artists. Brand identity, illustration, web dev.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ══════════════════════════════════════════════
-       SKILLS
-  ══════════════════════════════════════════════ -->
-  <section id="skills">
-    <p class="section-label" style="writing-mode:horizontal-tb;transform:none;flex-direction:row;">
-      // skills &amp; tools
-    </p>
+<!-- SKILLS -->
+<section id="skills">
+  <p class="section-label" style="writing-mode:horizontal-tb;transform:none;flex-direction:row;">// skills &amp; tools</p>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-icon">&#9000;</div>
+      <p class="skill-title">Software Development</p>
+      <p class="skill-list">Python &middot; JavaScript &middot; TypeScript<br>C++ &middot; Java &middot; SQL<br>Git &middot; Linux &middot; Docker</p>
+    </div>
+    <div class="skill-card reveal reveal-delay-1">
+      <div class="skill-icon">&#9689;</div>
+      <p class="skill-title">Machine Learning</p>
+      <p class="skill-list">PyTorch &middot; TensorFlow &middot; scikit-learn<br>Computer Vision &middot; NLP<br>Data Analysis &middot; Visualization</p>
+    </div>
+    <div class="skill-card reveal reveal-delay-2">
+      <div class="skill-icon">&#10022;</div>
+      <p class="skill-title">Design &amp; Creative</p>
+      <p class="skill-list">Figma &middot; Illustrator &middot; Photoshop<br>Procreate &middot; Typography<br>Photography &middot; Video Editing</p>
+    </div>
+    <div class="skill-card reveal reveal-delay-3">
+      <div class="skill-icon">&#9678;</div>
+      <p class="skill-title">Web &amp; Frontend</p>
+      <p class="skill-list">React &middot; Vue &middot; Next.js<br>HTML &middot; CSS &middot; Tailwind<br>Three.js &middot; p5.js</p>
+    </div>
+    <div class="skill-card reveal reveal-delay-4">
+      <div class="skill-icon">&#9651;</div>
+      <p class="skill-title">Research &amp; Writing</p>
+      <p class="skill-list">Academic writing &middot; LaTeX<br>Literature review &middot; Presentations<br>Science communication</p>
+    </div>
+    <div class="skill-card reveal reveal-delay-4">
+      <div class="skill-icon">&#9835;</div>
+      <p class="skill-title">Other Passions</p>
+      <p class="skill-list">Music production &middot; Illustration<br>Bookbinding &middot; Ceramics<br>Hiking &middot; Film photography</p>
+    </div>
+  </div>
+</section>
 
-    <div class="skills-grid">
-      <div class="skill-card reveal">
-        <div class="skill-icon">⌨</div>
-        <p class="skill-title">Software Development</p>
-        <p class="skill-list">Python · JavaScript · TypeScript<br>C++ · Java · SQL<br>Git · Linux · Docker</p>
-      </div>
-      <div class="skill-card reveal reveal-delay-1">
-        <div class="skill-icon">◉</div>
-        <p class="skill-title">Machine Learning</p>
-        <p class="skill-list">PyTorch · TensorFlow · scikit-learn<br>Computer Vision · NLP<br>Data Analysis · Visualization</p>
-      </div>
-      <div class="skill-card reveal reveal-delay-2">
-        <div class="skill-icon">✦</div>
-        <p class="skill-title">Design &amp; Creative</p>
-        <p class="skill-list">Figma · Illustrator · Photoshop<br>Procreate · Typography<br>Photography · Video Editing</p>
-      </div>
-      <div class="skill-card reveal reveal-delay-3">
-        <div class="skill-icon">◎</div>
-        <p class="skill-title">Web &amp; Frontend</p>
-        <p class="skill-list">React · Vue · Next.js<br>HTML · CSS · Tailwind<br>Three.js · p5.js</p>
-      </div>
-      <div class="skill-card reveal reveal-delay-4">
-        <div class="skill-icon">△</div>
-        <p class="skill-title">Research &amp; Writing</p>
-        <p class="skill-list">Academic writing · LaTeX<br>Literature review · Presentations<br>Science communication</p>
-      </div>
-      <div class="skill-card reveal reveal-delay-4">
-        <div class="skill-icon">♪</div>
-        <p class="skill-title">Other Passions</p>
-        <p class="skill-list">Music production · Illustration<br>Bookbinding · Ceramics<br>Hiking · Film photography</p>
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-header">
+    <h2 class="reveal">Selected<br>Projects</h2>
+    <a href="https://github.com/yourusername" class="cv-download" style="color:var(--dark);border-color:var(--dark)" target="_blank">&rarr; GitHub</a>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card featured reveal">
+      <span class="project-tag">&#10022; FEATURED PROJECT</span>
+      <h3 class="project-title">Your Big Project Name Here</h3>
+      <p class="project-desc">A detailed description of your most impressive project. What problem does it solve? What tech did you use? What was interesting about building it?<br><br>Tech: Python &middot; PyTorch &middot; React &middot; PostgreSQL</p>
+      <a href="#" class="project-link">View Project &rarr;</a>
+    </div>
+    <div class="project-card reveal reveal-delay-1">
+      <span class="project-tag">WEB APP</span>
+      <h3 class="project-title">Project Two</h3>
+      <p class="project-desc">Short description of this project. What makes it special? 2&ndash;3 sentences max.</p>
+      <a href="#" class="project-link">Explore &rarr;</a>
+    </div>
+    <div class="project-card reveal reveal-delay-2">
+      <span class="project-tag">RESEARCH</span>
+      <h3 class="project-title">Project Three</h3>
+      <p class="project-desc">Another cool thing you built or researched. Keep it punchy.</p>
+      <a href="#" class="project-link">Read more &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="gallery-intro">
+    <h2 class="reveal">Art &amp;<br><em>Creative</em><br>Work</h2>
+    <p class="reveal reveal-delay-1">Beyond the screen and keyboard, I create. This is a small window into my visual world &mdash; illustrations, photography, experiments with colour and form. Art keeps my thinking alive and my code human.</p>
+  </div>
+  <div class="gallery-masonry">
+    <div class="gallery-item reveal">
+      <div class="gallery-item-inner" style="--ratio:3/4;background:linear-gradient(135deg,#939F5C,#BBCE8A);">
+        <span class="gallery-placeholder">IMAGE 1</span>
+        <div class="gallery-overlay"><span>Untitled, 2024</span><small>DIGITAL ILLUSTRATION</small></div>
       </div>
     </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════════
-       PROJECTS
-  ══════════════════════════════════════════════ -->
-  <section id="projects">
-    <div class="projects-header">
-      <h2 class="reveal">Selected<br>Projects</h2>
-      <a href="https://github.com/yourusername"
-         class="cv-download"
-         style="color:var(--dark);border-color:var(--dark)"
-         target="_blank">→ GitHub</a>
-    </div>
-
-    <div class="projects-grid">
-      <div class="project-card featured reveal">
-        <span class="project-tag">✦ FEATURED PROJECT</span>
-        <h3 class="project-title">Your Big Project Name Here</h3>
-        <p class="project-desc">
-          A detailed description of your most impressive project. What problem does it solve?
-          What tech did you use? What was interesting about building it?<br><br>
-          Tech: Python · PyTorch · React · PostgreSQL
-        </p>
-        <a href="#" class="project-link">View Project →</a>
-      </div>
-
-      <div class="project-card reveal reveal-delay-1">
-        <span class="project-tag">WEB APP</span>
-        <h3 class="project-title">Project Two</h3>
-        <p class="project-desc">Short description of this project. What makes it special? 2–3 sentences max.</p>
-        <a href="#" class="project-link">Explore →</a>
-      </div>
-
-      <div class="project-card reveal reveal-delay-2">
-        <span class="project-tag">RESEARCH</span>
-        <h3 class="project-title">Project Three</h3>
-        <p class="project-desc">Another cool thing you built or researched. Keep it punchy.</p>
-        <a href="#" class="project-link">Read more →</a>
+    <div class="gallery-item reveal reveal-delay-1">
+      <div class="gallery-item-inner" style="--ratio:1/1;background:linear-gradient(135deg,#D16014,#939F5C);">
+        <span class="gallery-placeholder">IMAGE 2</span>
+        <div class="gallery-overlay"><span>Study in Orange</span><small>OIL PASTEL</small></div>
       </div>
     </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════════
-       GALLERY
-  ══════════════════════════════════════════════ -->
-  <section id="gallery">
-    <div class="gallery-intro">
-      <h2 class="reveal">Art &amp;<br><em>Creative</em><br>Work</h2>
-      <p class="reveal reveal-delay-1">
-        Beyond the screen and keyboard, I create. This is a small window into my visual world —
-        illustrations, photography, experiments with color and form.
-        Art keeps my thinking alive and my code human.
-      </p>
-    </div>
-
-    <div class="gallery-masonry">
-      <!-- Replace gradient backgrounds with: style="background: url('img.jpg') center/cover" -->
-      <div class="gallery-item reveal">
-        <div class="gallery-item-inner" style="--ratio:3/4; background:linear-gradient(135deg,#939F5C,#BBCE8A);">
-          <span class="gallery-placeholder">IMAGE 1</span>
-          <div class="gallery-overlay">
-            <span>Untitled, 2024</span>
-            <small>DIGITAL ILLUSTRATION</small>
-          </div>
-        </div>
-      </div>
-
-      <div class="gallery-item reveal reveal-delay-1">
-        <div class="gallery-item-inner" style="--ratio:1/1; background:linear-gradient(135deg,#D16014,#939F5C);">
-          <span class="gallery-placeholder">IMAGE 2</span>
-          <div class="gallery-overlay">
-            <span>Study in Orange</span>
-            <small>OIL PASTEL</small>
-          </div>
-        </div>
-      </div>
-
-      <div class="gallery-item reveal reveal-delay-2">
-        <div class="gallery-item-inner" style="--ratio:4/3; background:linear-gradient(135deg,#313715,#939F5C);">
-          <span class="gallery-placeholder">IMAGE 3</span>
-          <div class="gallery-overlay">
-            <span>Forest Light</span>
-            <small>FILM PHOTOGRAPHY</small>
-          </div>
-        </div>
-      </div>
-
-      <div class="gallery-item reveal reveal-delay-3">
-        <div class="gallery-item-inner" style="--ratio:1/1; background:linear-gradient(135deg,#BBCE8A,#E2F9B8);">
-          <span class="gallery-placeholder">IMAGE 4</span>
-          <div class="gallery-overlay">
-            <span>Botanical Study</span>
-            <small>INK + WATERCOLOR</small>
-          </div>
-        </div>
-      </div>
-
-      <div class="gallery-item reveal reveal-delay-1">
-        <div class="gallery-item-inner" style="--ratio:2/3; background:linear-gradient(180deg,#D16014,#313715);">
-          <span class="gallery-placeholder">IMAGE 5</span>
-          <div class="gallery-overlay">
-            <span>Warmth</span>
-            <small>DIGITAL PAINTING</small>
-          </div>
-        </div>
-      </div>
-
-      <div class="gallery-item reveal reveal-delay-2">
-        <div class="gallery-item-inner" style="--ratio:4/3; background:linear-gradient(135deg,#E2F9B8,#939F5C);">
-          <span class="gallery-placeholder">IMAGE 6</span>
-          <div class="gallery-overlay">
-            <span>Moss &amp; Light</span>
-            <small>PHOTOGRAPHY</small>
-          </div>
-        </div>
+    <div class="gallery-item reveal reveal-delay-2">
+      <div class="gallery-item-inner" style="--ratio:4/3;background:linear-gradient(135deg,#313715,#939F5C);">
+        <span class="gallery-placeholder">IMAGE 3</span>
+        <div class="gallery-overlay"><span>Forest Light</span><small>FILM PHOTOGRAPHY</small></div>
       </div>
     </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════════
-       CONTACT
-  ══════════════════════════════════════════════ -->
-  <section id="contact">
-    <div class="contact-inner">
-      <div class="contact-left">
-        <h2 class="reveal">Let's<br><em>talk.</em></h2>
-        <p class="reveal reveal-delay-1">
-          Whether you have a project in mind, want to collaborate, or just want to say hello —
-          my inbox is always open.
-        </p>
-        <div class="contact-links reveal reveal-delay-2">
-          <a href="mailto:you@email.com" class="contact-link">
-            <span>✉</span> you@email.com
-          </a>
-          <a href="https://github.com/yourusername" class="contact-link" target="_blank">
-            <span>◎</span> github.com/yourusername
-          </a>
-          <a href="https://linkedin.com/in/yourname" class="contact-link" target="_blank">
-            <span>⬡</span> linkedin.com/in/yourname
-          </a>
-          <a href="https://instagram.com/yourhandle" class="contact-link" target="_blank">
-            <span>◈</span> instagram.com/yourhandle
-          </a>
-        </div>
+    <div class="gallery-item reveal reveal-delay-3">
+      <div class="gallery-item-inner" style="--ratio:1/1;background:linear-gradient(135deg,#BBCE8A,#E2F9B8);">
+        <span class="gallery-placeholder">IMAGE 4</span>
+        <div class="gallery-overlay"><span>Botanical Study</span><small>INK + WATERCOLOR</small></div>
       </div>
-
-      <form class="contact-form reveal reveal-delay-2" onsubmit="return false;">
-        <div class="form-group">
-          <label>// your name</label>
-          <input type="text" placeholder="Jane Smith">
-        </div>
-        <div class="form-group">
-          <label>// your email</label>
-          <input type="email" placeholder="jane@email.com">
-        </div>
-        <div class="form-group">
-          <label>// message</label>
-          <textarea rows="5" placeholder="Hello! I'd love to..."></textarea>
-        </div>
-        <button class="form-submit">SEND MESSAGE ↗</button>
-      </form>
     </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════════
-       FOOTER
-  ══════════════════════════════════════════════ -->
-  <footer>
-    <p class="footer-copy">© 2025 Your Name · Made with ♥ + ☕</p>
-    <div class="footer-social">
-      <a href="#">GitHub</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Instagram</a>
-      <a href="#">CV</a>
+    <div class="gallery-item reveal reveal-delay-1">
+      <div class="gallery-item-inner" style="--ratio:2/3;background:linear-gradient(180deg,#D16014,#313715);">
+        <span class="gallery-placeholder">IMAGE 5</span>
+        <div class="gallery-overlay"><span>Warmth</span><small>DIGITAL PAINTING</small></div>
+      </div>
     </div>
-  </footer>
+    <div class="gallery-item reveal reveal-delay-2">
+      <div class="gallery-item-inner" style="--ratio:4/3;background:linear-gradient(135deg,#E2F9B8,#939F5C);">
+        <span class="gallery-placeholder">IMAGE 6</span>
+        <div class="gallery-overlay"><span>Moss &amp; Light</span><small>PHOTOGRAPHY</small></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- JavaScript (loaded at end of body so DOM is ready) -->
-  <script src="main.js"></script>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <h2 class="reveal">Let's<br><em>talk.</em></h2>
+      <p class="reveal reveal-delay-1">Whether you have a project in mind, want to collaborate, or just want to say hello &mdash; my inbox is always open.</p>
+      <div class="contact-links reveal reveal-delay-2">
+        <a href="mailto:you@email.com" class="contact-link"><span>&#9993;</span> you@email.com</a>
+        <a href="https://github.com/yourusername" class="contact-link" target="_blank"><span>&#9678;</span> github.com/yourusername</a>
+        <a href="https://linkedin.com/in/yourname" class="contact-link" target="_blank"><span>&#11010;</span> linkedin.com/in/yourname</a>
+        <a href="https://instagram.com/yourhandle" class="contact-link" target="_blank"><span>&#10504;</span> instagram.com/yourhandle</a>
+      </div>
+    </div>
+    <form class="contact-form reveal reveal-delay-2" onsubmit="return false;">
+      <div class="form-group">
+        <label>// your name</label>
+        <input type="text" placeholder="Jane Smith">
+      </div>
+      <div class="form-group">
+        <label>// your email</label>
+        <input type="email" placeholder="jane@email.com">
+      </div>
+      <div class="form-group">
+        <label>// message</label>
+        <textarea rows="5" placeholder="Hello! I'd love to..."></textarea>
+      </div>
+      <button class="form-submit">SEND MESSAGE &#8599;</button>
+    </form>
+  </div>
+</section>
 
+<!-- FOOTER -->
+<footer>
+  <p class="footer-copy">&copy; 2025 Your Name &middot; Made with &#9825; + &#9749;</p>
+  <div class="footer-social">
+    <a href="#">GitHub</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Instagram</a>
+    <a href="#">CV</a>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>

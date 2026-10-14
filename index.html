@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name — Creative CS</title>
+  <title>Anietta Weckauff — AI Safety · CS · Art</title>
+  <meta name="description" content="Anietta Weckauff — computer scientist researching AI safety and alignment, M.Sc. AI in Society at TUM, co-founder of #WomenInSTEM, and artist.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Syne:wght@700;800&display=swap" rel="stylesheet">
@@ -22,15 +23,16 @@
 <div id="cursor-ring"></div>
 
 <nav id="sidenav">
-  <a href="#hero" class="sidenav-logo">YN.DEV</a>
+  <a href="#hero" class="sidenav-logo">ANW</a>
   <ul class="sidenav-links">
-    <li><a href="#hero"     data-section="hero"     class="active">home</a></li>
-    <li><a href="#about"    data-section="about"    >about</a></li>
-    <li><a href="#cv"       data-section="cv"       >cv</a></li>
-    <li><a href="#skills"   data-section="skills"   >skills</a></li>
-    <li><a href="#projects" data-section="projects" >work</a></li>
-    <li><a href="#gallery"  data-section="gallery"  >art</a></li>
-    <li><a href="#contact"  data-section="contact"  >contact</a></li>
+    <li><a href="#hero"       data-section="hero"       class="active">home</a></li>
+    <li><a href="#about"      data-section="about"      >about</a></li>
+    <li><a href="#cv"         data-section="cv"         >cv</a></li>
+    <li><a href="#skills"     data-section="skills"     >skills</a></li>
+    <li><a href="#projects"   data-section="projects"   >work</a></li>
+    <li><a href="#engagement" data-section="engagement" >engagement</a></li>
+    <li><a href="#gallery"    data-section="gallery"    >art</a></li>
+    <li><a href="#contact"    data-section="contact"    >contact</a></li>
   </ul>
   <div class="sidenav-dots">
     <div class="sidenav-dot active" data-dot="hero"></div>
@@ -38,6 +40,7 @@
     <div class="sidenav-dot" data-dot="cv"></div>
     <div class="sidenav-dot" data-dot="skills"></div>
     <div class="sidenav-dot" data-dot="projects"></div>
+    <div class="sidenav-dot" data-dot="engagement"></div>
     <div class="sidenav-dot" data-dot="gallery"></div>
     <div class="sidenav-dot" data-dot="contact"></div>
   </div>
@@ -47,40 +50,49 @@
 <section id="hero">
   <div class="hero-left">
     <div class="hero-terminal" id="terminal-lines"></div>
-    <h1 class="hero-name">Your<br><em>Name</em><br>Here.</h1>
-    <p class="hero-tagline">I build things that live between code and creativity &mdash; from elegant algorithms to handcrafted visuals.</p>
+    <h1 class="hero-name">Anietta<br><em>Nina</em><br>Weckauff.</h1>
+    <p class="hero-tagline">Computer scientist passionate about advancing gender equality in STEM and interested in how we can build safe, trustworthy and reliable AI systems.</p>
     <div class="hero-cta">
       <a href="#projects" class="btn-primary">View my work &darr;</a>
       <a href="#contact" class="btn-ghost">Get in touch &rarr;</a>
     </div>
   </div>
+
   <div class="hero-right">
-    <div class="floating-tag">// &lt;creative_coder /&gt;</div>
-    <div class="hero-photo-placeholder"></div>
-    <div class="floating-tag">&#10022; cs + art</div>
-    <div class="floating-tag">open to work &#9675;</div>
+  <div class="floating-tag">// &lt;ai_safety + alignment /&gt;</div>
+  <div class="hero-photo">
+    <img src="portrait.jpg" alt="Anietta Weckauff">
   </div>
+  <div class="floating-tag">&#10022; cs + art</div>
+  <div class="floating-tag">m.sc. @ tum &#9675;</div>
+</div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
   <div class="section-label">about me</div>
   <div class="about-content">
-    <h2 class="reveal">I'm a computer scientist<br>who <span>can't stop</span> creating.</h2>
-    <p class="reveal reveal-delay-1">Hello! I'm <strong>Your Name</strong>, a CS student / developer based in [Your City]. I love the intersection where logic meets aesthetics &mdash; building software that not only works beautifully, but looks beautiful doing it.</p>
-    <p class="reveal reveal-delay-2">When I'm not writing code, I'm probably sketching, painting, playing music, or diving into some new creative rabbit hole. I believe the best technologists are the ones who see the world artistically.</p>
-    <p class="reveal reveal-delay-3">Currently studying at [Your University] / working at [Your Company]. Always open to interesting projects and conversations.</p>
+    <!-- <h2 class="reveal">I'm a computer scientist<br>who <span>can't stop</span> creating.</h2> -->
+    <p class="reveal reveal-delay-1">Hello! I'm <strong>Anietta</strong>, a computer scientist based in Munich. I'm studying <strong>AI in Society (M.Sc.)</strong> at TUM as a scholar of the Konrad Zuse School of Excellence in Reliable AI (relAI), after finishing my B.Sc. in Computer Science at the University of Stuttgart.</p>
+    <p class="reveal reveal-delay-2">I'm interested in <strong>AI safety and alignment</strong>: I've worked on this at IRIS3D in Stuttgart and in the AI Safety &amp; Alignment group at the ELLIS Institute and Max Planck Institute for Intelligent Systems in T&uuml;bingen.</p>
+    <p class="reveal reveal-delay-3">I think we need more women in STEM & tech, so I co-founded <strong>#WomenInSTEM</strong> and mentor girls in STEM. Away from the screen I'm painting, crafting, writing, taking photos, reading, bouldering, or out running, hiking or exploring new countries.</p>
     <div class="about-chips reveal reveal-delay-4">
-      <span class="chip">Python</span>
-      <span class="chip">JavaScript</span>
-      <span class="chip">React</span>
-      <span class="chip">Machine Learning</span>
-      <span class="chip">Algorithms</span>
-      <span class="chip">Illustration</span>
+      <span class="chip">Women in STEM</span>
+      <span class="chip">AI </span>
+      <span class="chip">LLM Alignment</span>
+      <span class="chip">Web Development</span>
+      <span class="chip">Feminism</span>
+      <span class="chip">Java</span>
+      <span class="chip">UI/UX Design</span>
+      <span class="chip">Drawing &amp; Painting</span>
       <span class="chip">Photography</span>
-      <span class="chip">UI/UX</span>
-      <span class="chip">Music</span>
-      <span class="chip">Typography</span>
+      <span class="chip">Writing</span>
+      <span class="chip">Bouldering</span>
+      <span class="chip">Python</span>
+      <span class="chip">Sustainability</span>
+      <span class="chip">Women in STEM</span>
+      <span class="chip">Fashion</span>
+      <span class="chip">Research</span>
     </div>
   </div>
 </section>
@@ -96,43 +108,215 @@
       <div class="cv-col reveal">
         <p class="cv-col-title">// EDUCATION</p>
         <div class="cv-entry">
-          <p class="cv-year">2022 &mdash; present</p>
-          <p class="cv-role">M.Sc. Computer Science</p>
-          <p class="cv-place">University of Your City</p>
-          <p class="cv-desc">Focus: Machine Learning &amp; Human-Computer Interaction. Thesis on generative models for creative applications.</p>
+          <p class="cv-year">Oct 2026 &mdash; present</p>
+          <p class="cv-role">M.Sc. AI in Society</p>
+          <p class="cv-place">Technical University of Munich (TUM)</p>
+          <p class="cv-desc">Scholar of the Konrad Zuse School of Excellence in Reliable AI (relAI, DAAD).</p>
         </div>
         <div class="cv-entry">
-          <p class="cv-year">2019 &mdash; 2022</p>
+          <p class="cv-year">Oct 2021 &mdash; Dec 2025</p>
           <p class="cv-role">B.Sc. Computer Science</p>
-          <p class="cv-place">University of Your City</p>
-          <p class="cv-desc">Graduated with distinction. Minor in Digital Arts and Media Design.</p>
+          <p class="cv-place">University of Stuttgart</p>
+          <p class="cv-desc">Final grade 1.1, with distinction.</p>
+          <p class="cv-desc">Thesis: &ldquo;Investigating the Emergence of Toxicity and Misalignment in Large Language Models Through Fine-Tuning&rdquo; (IRIS3D).</p>
+          <p class = "cv-desc"> Seminar on gender bias in image captioning models; research project on real-time physics in a 2D game (C++); Design Thinking and Leadership &amp; Team Coaching in STEM at the Design Factory Stuttgart.</p>
         </div>
         <div class="cv-entry">
-          <p class="cv-year">2024</p>
-          <p class="cv-role">Workshop / Certificate</p>
-          <p class="cv-place">Institute Name</p>
-          <p class="cv-desc">Short description of what you learned or achieved.</p>
+          <p class="cv-year">Sept 2023 &mdash; Dec 2023</p>
+          <p class="cv-role">Semester Abroad</p>
+          <p class="cv-place">University of Toronto</p>
+          <p class="cv-desc">GPA A+. Courses in software design, interactive media design, data science and cognitive science.</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-year">2012 &mdash; 2020</p>
+          <p class="cv-role">Abitur (A-Levels)</p>
+          <p class="cv-place">Solitude-Gymnasium, Stuttgart</p>
+          <p class="cv-desc">Grade 1.0. Awards: Ferry-Porsche-Preis, Scheffel-Preis, DMV-Mathematikpreis, DPG-Physikpreis, GDCh-Chemiepreis.</p>
         </div>
       </div>
       <div class="cv-col reveal reveal-delay-2">
         <p class="cv-col-title">// EXPERIENCE</p>
         <div class="cv-entry">
-          <p class="cv-year">2023 &mdash; present</p>
-          <p class="cv-role">Research Assistant</p>
-          <p class="cv-place">Lab / Institute Name</p>
-          <p class="cv-desc">Working on X, building Y, publishing Z. Collaborating with interdisciplinary team.</p>
+          <p class="cv-year">Feb 2026 &mdash; Apr 2026</p>
+          <p class="cv-role">Research Intern</p>
+          <p class="cv-place">ELLIS Institute &amp; Max Planck Institute for Intelligent Systems, T&uuml;bingen</p>
+          <p class="cv-desc">AI Safety &amp; Alignment group, supervised by Maksym Andriushchenko. Research on emergent misalignment and generalization in LLMs.</p>
         </div>
         <div class="cv-entry">
-          <p class="cv-year">Summer 2023</p>
-          <p class="cv-role">Software Engineering Intern</p>
-          <p class="cv-place">Company Name</p>
-          <p class="cv-desc">Developed feature X for product Y. Improved performance by Z%. Worked with React and Node.js.</p>
+          <p class="cv-year">Apr 2025 &mdash; Jan 2026</p>
+          <p class="cv-role">Student Research Assistant</p>
+          <p class="cv-place">IRIS3D, University of Stuttgart</p>
+          <p class="cv-desc">AI Safety group led by Dr. Thilo Hagendorff. Literature research and scientific writing, empirical analysis of machine behaviour and emergent abilities in LLMs, Python tooling for data analysis and LLM APIs.</p>
         </div>
         <div class="cv-entry">
-          <p class="cv-year">2021 &mdash; 2022</p>
-          <p class="cv-role">Freelance Designer &amp; Developer</p>
-          <p class="cv-place">Self-employed</p>
-          <p class="cv-desc">Designed and built websites for local businesses and artists. Brand identity, illustration, web dev.</p>
+          <p class="cv-year">Mar 2024 &mdash; Sept 2025</p>
+          <p class="cv-role">Software Engineering Intern &amp; Working Student</p>
+          <p class="cv-place">GEBIT Solutions GmbH, Stuttgart</p>
+          <p class="cv-desc">UI design and frontend development with Angular and Flutter, web communication (REST, HTTP, gRPC), backend development in Java, testing with JUnit, Git workflows.</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-year">Oct 2022 &mdash; Mar 2023</p>
+          <p class="cv-role">Tutor, Theoretical Computer Science</p>
+          <p class="cv-place">Institute for Formal Methods in CS, University of Stuttgart</p>
+          <p class="cv-desc">Tutorials accompanying the lecture &ldquo;Theoretical Computer Science 1&rdquo;.</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-year">Sept 2021 &mdash; Aug 2023</p>
+          <p class="cv-role">Private Tutor</p>
+          <p class="cv-place">Lernbox at St&ouml;ckach, Stuttgart</p>
+          <p class="cv-desc">Maths lessons, homework help and exam preparation for grades 5&ndash;12.</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-header">
+    <h2 class="reveal">Research &amp;<br>Projects</h2>
+    <!-- TODO: add your GitHub username (or remove this link) -->
+    <a href="https://github.com/yourusername" class="cv-download" style="color:var(--dark);border-color:var(--dark)" target="_blank">&rarr; GitHub</a>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card featured reveal">
+      <span class="project-tag">&#10022; PUBLICATION &middot; CO-FIRST AUTHOR</span>
+      <h3 class="project-title">Emergently Misaligned Language Models Show Behavioral Self-Awareness That Shifts With Subsequent Realignment</h3>
+      <p class="project-desc">When language models become misaligned through fine-tuning, do they notice? This paper shows that emergently misaligned models display behavioural self-awareness of their changed behaviour, and that this self-assessment shifts again once the models are realigned.<br><br>Accepted at TAIS 2026 for presentation and at the Machine+Behavior Conference 2026.</p>
+      <a href="https://arxiv.org/abs/2602.14777" class="project-link" target="_blank">Read on arXiv &rarr;</a>
+    </div>
+    <div class="project-card reveal reveal-delay-1">
+      <span class="project-tag">PUBLICATION &middot; FIRST AUTHOR</span>
+      <h3 class="project-title">Characterizing the Consistency of the Emergent Misalignment Persona</h3>
+      <p class="project-desc">How stable is the &ldquo;persona&rdquo; that emerges in misaligned models? Accepted to the ICML 2026 Workshop on Epistemic Intelligence in Machine Learning.</p>
+      <a href="https://arxiv.org/abs/2604.28082" class="project-link" target="_blank">Read on arXiv &rarr;</a>
+    </div>
+
+  </div>
+  <div class="projects-grid projects-grid-more">
+    <div class="project-card reveal">
+      <span class="project-tag">C++ &middot; RESEARCH PROJECT</span>
+      <h3 class="project-title">Real-Time Physics in a 2D Survival Game</h3>
+      <p class="project-desc">Bachelor's research project at the Institute for Distributed and Parallel Systems, working towards real-time physics in a 2D survival-based game.</p>
+      <a href="https://github.com/SC-SGS/surviving-sarntal" class="project-link" target="_blank">See GitHub repository &rarr;</a>
+    </div>
+
+     <div class="project-card reveal">
+      <span class="project-tag">BLOG ARTICLE</span>
+      <h3 class="project-title">More Than 16 Percent: What Women in STEM Fields Really Need</h3>
+      <p class="project-desc">Blog post on the importance of supporting women and girls in science, technology, engineering, and mathematics.</p>
+      <a href="https://www.usus.uni-stuttgart.de/blog/frauen-in-mint/" class="project-link" target="_blank">See blog post &rarr;</a>
+    </div>
+
+         <div class="project-card reveal">
+      <span class="project-tag">SPEAKER &middot; WEBINAR </span>
+      <h3 class="project-title">Policy Webinar - "Driving Institutional Change in Higher Education & Research </h3>
+      <p class="project-desc">Participated as a speaker at the webinar discussing how we can support women in STEM in higher education and research.</p>
+      <a href="https://www.youtube.com/watch?v=xKlp0oDSWhY" class="project-link" target="_blank">See video &rarr;</a>
+    </div>
+
+
+    <div class="project-card reveal">
+      <span class="project-tag">INTERDISCIPLINARY PROJECT </span>
+      <h3 class="project-title">School for Talents Annual Program </h3>
+      <p class="project-desc">Participated in the annual program of the School for Talents "Expanding Realities – New Visions".</p>
+      <a href="https://www.project.uni-stuttgart.de/school-for-talents/de/annual_program/Annual-Program-Archiv/annualprogram_2024/" class="project-link" target="_blank">See website &rarr;</a>
+    </div>
+
+        <div class="project-card reveal">
+      <span class="project-tag">QUANTUM COMPUTING &middot; QISKIT FALL FEST </span>
+      <h3 class="project-title">Qiskit Fall Fest 2025</h3>
+      <p class="project-desc">Organisation of the Qiskit Fall Fest 2025.</p>
+      <a href="https://www.youtube.com/watch?v=G1Vmdu4z8p8" class="project-link" target="_blank">See video &rarr;</a>
+      <a href=" https://www.uni-stuttgart.de/en/university/news/all/Quantum-science.-From-students-for-students/" class="project-link" target="_blank">See article &rarr;</a>
+    
+    </div>
+
+      <div class="project-card reveal">
+      <span class="project-tag">DESIGN THINKING </span>
+      <h3 class="project-title">Design Thinking Project on Human-Robot-Interaction</h3>
+      <p class="project-desc">Development of app prototype for facilitating human-robot interaction in the Design Factory.</p>
+    </div>
+
+
+
+  </div>
+</section>
+
+
+<section id="cv">
+  <div class="cv-inner">
+    <div class="cv-header reveal">
+      <h2>Curriculum <em>Vitae</em></h2>
+      <a href="cv.pdf" class="cv-download" download>&darr; Download PDF</a>
+    </div>
+
+    <div class="cv-grid">
+      <div class="cv-col reveal">
+        <p class="cv-col-title">// SCHOLARSHIPS</p>
+        <div class="cv-entry">
+          <p class="cv-year">Oct 2026 &mdash; present</p>
+          <p class="cv-role">Konrad Zuse School of Excellence in Reliable AI</p>
+          <p class="cv-place">DAAD &middot; relAI M.Sc. programme</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-year">Oct 2026 &mdash; present</p>
+          <p class="cv-role">Female Talent Pitch Scholarship</p>
+          <p class="cv-place">EnBW</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-year">Dec 2025 &mdash; present</p>
+          <p class="cv-role">Female Upgreat Scholarship</p>
+          <p class="cv-place">Bechtle Foundation</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-year">Sept 2023 &mdash; Dec 2023</p>
+          <p class="cv-role">Baden-W&uuml;rttemberg-Stipendium</p>
+          <p class="cv-place">Baden-W&uuml;rttemberg-Stiftung &middot; University of Toronto</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-year">Apr 2022 &mdash; Mar 2025</p>
+          <p class="cv-role">Deutschlandstipendium (3&times;)</p>
+          <p class="cv-place">Funded by Vector Informatik, GEBIT Solutions, Novatec Consulting</p>
+        </div>
+      </div>
+      <div class="cv-col reveal reveal-delay-2">
+        <p class="cv-col-title">// PROGRAMS</p>
+        <div class="cv-entry">
+          <p class="cv-year">Sept 2026 &mdash; Oct 2026</p>
+          <p class="cv-role">Ferienakademie 2026</p>
+          <p class="cv-place">Sarntal &middot; &ldquo;Secure and Explainable Machine Learning&rdquo;</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-year">Mar 2026 &mdash; present</p>
+          <p class="cv-role">EXIST Women</p>
+          <p class="cv-place">University of Stuttgart &middot; women in entrepreneurship</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-year">Oct 2025 &mdash; Mar 2026</p>
+          <p class="cv-role">TechXXellence</p>
+          <p class="cv-place">KPMG &middot; mentoring for female STEM students</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-year">Sept 2025 &mdash; Oct 2025</p>
+          <p class="cv-role">Ferienakademie 2025</p>
+          <p class="cv-place">Sarntal &middot; &ldquo;Achieving a Climate Neutral and Circular Economy in a Polarized World&rdquo;</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-year">Sept 2024 &mdash; Dec 2024</p>
+          <p class="cv-role">YouGrow Women Mentorship</p>
+          <p class="cv-place">McKinsey &middot; coaching, workshops, sustainability strategy case</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-year">Apr 2024 &mdash; present</p>
+          <p class="cv-role">School for Talents</p>
+          <p class="cv-place">University of Stuttgart &middot; &ldquo;Human Agency in the Age of AI&rdquo;</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-year">Apr 2023 &mdash; Apr 2024</p>
+          <p class="cv-role">Female Talents Mentoring</p>
+          <p class="cv-place">IBM</p>
         </div>
       </div>
     </div>
@@ -146,107 +330,132 @@
     <div class="skill-card reveal">
       <div class="skill-icon">&#9000;</div>
       <p class="skill-title">Software Development</p>
-      <p class="skill-list">Python &middot; JavaScript &middot; TypeScript<br>C++ &middot; Java &middot; SQL<br>Git &middot; Linux &middot; Docker</p>
+      <p class="skill-list">Python &middot; Java &middot; Git &middot; JUnit <br Angular &middot; Flutter<br>HTML &middot; CSS &middot; TypeScript<br>REST &middot; HTTP &middot; gRPC</p>
     </div>
     <div class="skill-card reveal reveal-delay-1">
       <div class="skill-icon">&#9689;</div>
-      <p class="skill-title">Machine Learning</p>
-      <p class="skill-list">PyTorch &middot; TensorFlow &middot; scikit-learn<br>Computer Vision &middot; NLP<br>Data Analysis &middot; Visualization</p>
+      <p class="skill-title">AI Safety &amp; LLMs</p>
+      <p class="skill-list">Emergent misalignment &middot; Fine-tuning<br>Behavioural evaluation of LLMs</p>
     </div>
     <div class="skill-card reveal reveal-delay-2">
       <div class="skill-icon">&#10022;</div>
       <p class="skill-title">Design &amp; Creative</p>
-      <p class="skill-list">Figma &middot; Illustrator &middot; Photoshop<br>Procreate &middot; Typography<br>Photography &middot; Video Editing</p>
+      <p class="skill-list">Figma &middot; Lightroom<br>UI/UX design &middot; User-centred design<br>Processing &middot; Design Thinking</p>
     </div>
     <div class="skill-card reveal reveal-delay-3">
       <div class="skill-icon">&#9678;</div>
-      <p class="skill-title">Web &amp; Frontend</p>
-      <p class="skill-list">React &middot; Vue &middot; Next.js<br>HTML &middot; CSS &middot; Tailwind<br>Three.js &middot; p5.js</p>
+      <p class="skill-title">Organization</p>
+      <p class="skill-list">Scrum &middot; Project management <br> Event planning & hosting </p>
     </div>
     <div class="skill-card reveal reveal-delay-4">
       <div class="skill-icon">&#9651;</div>
       <p class="skill-title">Research &amp; Writing</p>
-      <p class="skill-list">Academic writing &middot; LaTeX<br>Literature review &middot; Presentations<br>Science communication</p>
+      <p class="skill-list">Literature research &middot; Scientific writing<br> Blog writing &middot; Science communication</p>
     </div>
     <div class="skill-card reveal reveal-delay-4">
-      <div class="skill-icon">&#9835;</div>
-      <p class="skill-title">Other Passions</p>
-      <p class="skill-list">Music production &middot; Illustration<br>Bookbinding &middot; Ceramics<br>Hiking &middot; Film photography</p>
+      <div class="skill-icon">&#9673;</div>
+      <p class="skill-title">Languages</p>
+      <p class="skill-list">German &middot; native<br>English &middot; C2 (TOEFL iBT 6/6)<br>French &middot; B1 &nbsp;&middot;&nbsp; Spanish &middot; A1</p>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="projects-header">
-    <h2 class="reveal">Selected<br>Projects</h2>
-    <a href="https://github.com/yourusername" class="cv-download" style="color:var(--dark);border-color:var(--dark)" target="_blank">&rarr; GitHub</a>
-  </div>
-  <div class="projects-grid">
-    <div class="project-card featured reveal">
-      <span class="project-tag">&#10022; FEATURED PROJECT</span>
-      <h3 class="project-title">Your Big Project Name Here</h3>
-      <p class="project-desc">A detailed description of your most impressive project. What problem does it solve? What tech did you use? What was interesting about building it?<br><br>Tech: Python &middot; PyTorch &middot; React &middot; PostgreSQL</p>
-      <a href="#" class="project-link">View Project &rarr;</a>
+<!-- ENGAGEMENT -->
+<section id="engagement">
+  <div class="engage-inner">
+    <div class="engage-intro">
+      <h2 class="reveal">Giving<br><em>Back.</em></h2>
+      <p class="reveal reveal-delay-1">Since my school days I've been tutoring, mentoring and organising, today mostly to help women and girls find their place in STEM and to bring people together around technology.</p>
     </div>
-    <div class="project-card reveal reveal-delay-1">
-      <span class="project-tag">WEB APP</span>
-      <h3 class="project-title">Project Two</h3>
-      <p class="project-desc">Short description of this project. What makes it special? 2&ndash;3 sentences max.</p>
-      <a href="#" class="project-link">Explore &rarr;</a>
+    <div class="engage-grid">
+      <div class="engage-card reveal">
+        <span class="engage-num">01</span>
+        <p class="engage-year">Oct 2024 &mdash; present</p>
+        <h3 class="engage-role">#WomenInSTEM &middot; Co-Founder</h3>
+        <p class="engage-org">University of Stuttgart</p>
+        <p class="engage-desc">Co-founded a network for female STEM students. We organise and host networking, skill-building and career events.</p>
+        <a href="https://www.women-in-stem.de" class="engage-link" target="_blank">women-in-stem.de &rarr;</a>
+      </div>
+
+      <div class="engage-card reveal reveal-delay-2">
+        <span class="engage-num">02</span>
+        <p class="engage-year">Oct 2025 &mdash; present</p>
+        <h3 class="engage-role">CyberMentoring &middot; Mentor</h3>
+        <p class="engage-org">Germany's largest online mentoring programme for girls in STEM</p>
+        <p class="engage-desc">Weekly sessions with a schoolgirl, exploring STEM topics together.</p>
+        <a href="https://cybermentor.de" class="engage-link" target="_blank">cybermentor.de &rarr;</a>
+      </div>
+      <div class="engage-card reveal reveal-delay-3">
+        <span class="engage-num">03</span>
+        <p class="engage-year">Oct 2026 &mdash; present</p>
+        <h3 class="engage-role">IT-Heldinnen &middot; Social Media</h3>
+        <p class="engage-org">Initiative of the Gesellschaft f&uuml;r Informatik</p>
+        <p class="engage-desc">Supporting the social media team of the IT-Heldinnen initiative.</p>
+        <a href="https://it-heldinnen.gi.de/" class="engage-link" target="_blank">it-heldinnen.gi.de &rarr;</a>
+      </div>
+
+      <div class="engage-card reveal reveal-delay-4">
+        <span class="engage-num">04</span>
+          <p class="engage-year">Oct 2021 &mdash; Apr 2026 </p>
+          <h3 class="engage-role">Author</h3>
+          <p class="engage-org">USUS &mdash; student blog of the University of Stuttgart</p>
+          <p class="engage-desc">Researching and writing articles on university-related topics.</p>
+          <a href="https://www.usus.uni-stuttgart.de/en/" class="engage-link" target="_blank">usus.uni-stuttgart.de &rarr;</a>
+        </div>
     </div>
-    <div class="project-card reveal reveal-delay-2">
-      <span class="project-tag">RESEARCH</span>
-      <h3 class="project-title">Project Three</h3>
-      <p class="project-desc">Another cool thing you built or researched. Keep it punchy.</p>
-      <a href="#" class="project-link">Read more &rarr;</a>
-    </div>
+    <p class="engage-subtitle reveal">// earlier engagement</p>
+    <ul class="engage-list reveal">
+      <li><span class="engage-list-year">2025</span><span class="engage-list-role">Qiskit Fall Fest Organization team</span><span class="engage-list-desc">Planned and organised a three-day festival on quantum computing and technology together with IBM Quantum and several companies and research institutions</span></li>
+      <li><span class="engage-list-year">2021 &mdash; 2025</span><span class="engage-list-role">Student body, Faculty of Computer Science</span><span class="engage-list-desc">Theoretical CS preliminary course, &ldquo;school &amp; information&rdquo; working group, Science Day, supporting women in CS</span></li>
+      <li><span class="engage-list-year">2022 &mdash; 2023</span><span class="engage-list-role">Intercultural Mentoring</span><span class="engage-list-desc">Helping international students find their way around university and city</span></li>
+      <li><span class="engage-list-year">2022 &mdash; 2023</span><span class="engage-list-role">Try-Science Mentoring</span><span class="engage-list-desc">Supporting schoolgirls with study orientation</span></li>
+      <li><span class="engage-list-year">2020</span><span class="engage-list-role">Voluntary Service, Spielhaus Stuttgart</span><span class="engage-list-desc">Planning youth programmes and experiential education</span></li>
+      <li><span class="engage-list-year">2018 &mdash; 2021</span><span class="engage-list-role">Volunteer Tutor</span><span class="engage-list-desc">Maths, physics and chemistry</span></li>
+    </ul>
   </div>
 </section>
+
+
 
 <!-- GALLERY -->
+<!-- TODO: replace each .gallery-placeholder with an <img> and update the overlay titles -->
 <section id="gallery">
   <div class="gallery-intro">
     <h2 class="reveal">Art &amp;<br><em>Creative</em><br>Work</h2>
-    <p class="reveal reveal-delay-1">Beyond the screen and keyboard, I create. This is a small window into my visual world &mdash; illustrations, photography, experiments with colour and form. Art keeps my thinking alive and my code human.</p>
+    <p class="reveal reveal-delay-1">I love trying creative things: drawing, painting, writing, collage making, printing techniques and photography. These are some examples.</p>
   </div>
   <div class="gallery-masonry">
     <div class="gallery-item reveal">
-      <div class="gallery-item-inner" style="--ratio:3/4;background:linear-gradient(135deg,#939F5C,#BBCE8A);">
-        <span class="gallery-placeholder">IMAGE 1</span>
-        <div class="gallery-overlay"><span>Untitled, 2024</span><small>DIGITAL ILLUSTRATION</small></div>
+      <div class="gallery-item-inner" style="--ratio:4/3;background:linear-gradient(135deg,#939F5C,#BBCE8A);">
+        <img src="pictures/44.jpg" alt="Artwork 1">
+        <div class="gallery-overlay"><span>Untitled</span><small>DRAWING</small></div>
       </div>
     </div>
     <div class="gallery-item reveal reveal-delay-1">
-      <div class="gallery-item-inner" style="--ratio:1/1;background:linear-gradient(135deg,#D16014,#939F5C);">
-        <span class="gallery-placeholder">IMAGE 2</span>
-        <div class="gallery-overlay"><span>Study in Orange</span><small>OIL PASTEL</small></div>
+      <div class="gallery-item-inner" style="--ratio:4/3;background:linear-gradient(135deg,#D16014,#939F5C);">
+        <img src="pictures/22.PNG" alt="Artwork 2">
+        <div class="gallery-overlay"><span>Untitled</span><small>PAINTING</small></div>
       </div>
     </div>
     <div class="gallery-item reveal reveal-delay-2">
       <div class="gallery-item-inner" style="--ratio:4/3;background:linear-gradient(135deg,#313715,#939F5C);">
-        <span class="gallery-placeholder">IMAGE 3</span>
-        <div class="gallery-overlay"><span>Forest Light</span><small>FILM PHOTOGRAPHY</small></div>
+        <img src="pictures/11.PNG" alt="Artwork 1">
+        <div class="gallery-overlay"><span>Untitled</span><small>PHOTOGRAPHY</small></div>
       </div>
     </div>
     <div class="gallery-item reveal reveal-delay-3">
-      <div class="gallery-item-inner" style="--ratio:1/1;background:linear-gradient(135deg,#BBCE8A,#E2F9B8);">
-        <span class="gallery-placeholder">IMAGE 4</span>
-        <div class="gallery-overlay"><span>Botanical Study</span><small>INK + WATERCOLOR</small></div>
+      <div class="gallery-item-inner" style="--ratio:4/3;background:linear-gradient(135deg,#BBCE8A,#E2F9B8);">
+        <img src="pictures/4.PNG" alt="Artwork 4">
+        <div class="gallery-overlay"><span>Untitled</span><small>DRAWING</small></div>
       </div>
     </div>
     <div class="gallery-item reveal reveal-delay-1">
-      <div class="gallery-item-inner" style="--ratio:2/3;background:linear-gradient(180deg,#D16014,#313715);">
-        <span class="gallery-placeholder">IMAGE 5</span>
-        <div class="gallery-overlay"><span>Warmth</span><small>DIGITAL PAINTING</small></div>
+      <div class="gallery-item-inner" style="--ratio:1/1;background:linear-gradient(180deg,#D16014,#313715);">
+        <img src="pictures/33.jpg" alt="Artwork 5">
+        <div class="gallery-overlay"><span>Untitled</span><small>PAINTING</small></div>
       </div>
     </div>
-    <div class="gallery-item reveal reveal-delay-2">
-      <div class="gallery-item-inner" style="--ratio:4/3;background:linear-gradient(135deg,#E2F9B8,#939F5C);">
-        <span class="gallery-placeholder">IMAGE 6</span>
-        <div class="gallery-overlay"><span>Moss &amp; Light</span><small>PHOTOGRAPHY</small></div>
-      </div>
-    </div>
+
   </div>
 </section>
 
@@ -255,12 +464,11 @@
   <div class="contact-inner">
     <div class="contact-left">
       <h2 class="reveal">Let's<br><em>talk.</em></h2>
-      <p class="reveal reveal-delay-1">Whether you have a project in mind, want to collaborate, or just want to say hello &mdash; my inbox is always open.</p>
+      <p class="reveal reveal-delay-1">Whether you want to talk about research and projects, team up for a women in STEM event, or just say hello &mdash; my inbox is open!</p>
       <div class="contact-links reveal reveal-delay-2">
-        <a href="mailto:you@email.com" class="contact-link"><span>&#9993;</span> you@email.com</a>
-        <a href="https://github.com/yourusername" class="contact-link" target="_blank"><span>&#9678;</span> github.com/yourusername</a>
-        <a href="https://linkedin.com/in/yourname" class="contact-link" target="_blank"><span>&#11010;</span> linkedin.com/in/yourname</a>
-        <a href="https://instagram.com/yourhandle" class="contact-link" target="_blank"><span>&#10504;</span> instagram.com/yourhandle</a>
+        <a href="mailto:anietta.weckauff@web.de" class="contact-link"><span>&#9993;</span> anietta.weckauff@web.de</a>
+        <a href="https://github.com/nina2811aw" class="contact-link" target="_blank"><span>&#9678;</span> github.com/nina2811aw</a>
+        <a href="https://linkedin.com/in/anietta-weckauff" class="contact-link" target="_blank"><span>&#11010;</span> linkedin.com/in/anietta-weckauff</a>
       </div>
     </div>
     <form class="contact-form reveal reveal-delay-2" onsubmit="return false;">
@@ -283,12 +491,12 @@
 
 <!-- FOOTER -->
 <footer>
-  <p class="footer-copy">&copy; 2025 Your Name &middot; Made with &#9825; + &#9749;</p>
+  <p class="footer-copy">&copy; 2026 Anietta Weckauff &middot; Made with &#9825; + &#9749;</p>
   <div class="footer-social">
-    <a href="#">GitHub</a>
-    <a href="#">LinkedIn</a>
-    <a href="#">Instagram</a>
-    <a href="#">CV</a>
+    <!-- TODO: link your profiles -->
+    <a href="https://github.com/nina2811aw" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/anietta-weckauff" target="_blank">LinkedIn</a>
+    <a href="cv.pdf" download>CV</a>
   </div>
 </footer>
 

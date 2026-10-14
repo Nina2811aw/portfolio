@@ -27,7 +27,7 @@ document.addEventListener('mousemove', e => {
 })();
 
 // Cursor grows on interactive elements
-document.querySelectorAll('a, button, .skill-card, .project-card, .gallery-item, .chip').forEach(el => {
+document.querySelectorAll('a, button, .skill-card, .project-card, .engage-card, .gallery-item, .chip').forEach(el => {
   el.addEventListener('mouseenter', () => {
     cursor.style.width  = '40px';
     cursor.style.height = '40px';
@@ -109,9 +109,9 @@ themeToggle.addEventListener('click', () => {
    ===================================================== */
 const terminalLines = [
   { text: '$ whoami',                      cls: 'term-prompt',     delay: 300  },
-  { text: '→ your_name · cs · creative',   cls: 'term-output',     delay: 700  },
-  { text: '$ cat skills.txt',              cls: 'term-prompt',     delay: 1100 },
-  { text: '→ ml · design · music · art',   cls: 'term-output-dim', delay: 1500 },
+  { text: '→ anietta · cs · ai safety · art', cls: 'term-output',  delay: 700  },
+  { text: '$ cat now.txt',                 cls: 'term-prompt',     delay: 1100 },
+  { text: '→ m.sc. ai in society @ tum',   cls: 'term-output-dim', delay: 1500 },
   { text: '$ ./portfolio.sh',              cls: 'term-prompt',     delay: 1900 },
 ];
 
@@ -193,7 +193,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 /* =====================================================
    ACTIVE SECTION TRACKING (side nav dots)
    ===================================================== */
-const sections = ['hero', 'about', 'cv', 'skills', 'projects', 'gallery', 'contact'];
+const sections = ['hero', 'about', 'cv', 'skills', 'projects', 'engagement', 'gallery', 'contact'];
 
 function setActive(id) {
   document.querySelectorAll('.sidenav-links a').forEach(a => {

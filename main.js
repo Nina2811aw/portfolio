@@ -247,3 +247,66 @@ logo.addEventListener('mouseenter', () => {
     }
   }, 40);
 });
+
+/* =====================================================
+   WOMEN IN STEM SPINNER
+   ===================================================== */
+const WOMEN = [
+  { name: 'Katherine Johnson', years: '1918 – 2020', field: 'Mathematics · NASA', photo: 'women/johnson.png',
+    text: 'Calculated the flight paths for the first American human spaceflights and the Apollo 11 Moon landing. Awarded the Presidential Medal of Freedom in 2015.' },
+  { name: 'Grace Hopper', years: '1906 – 1992', field: 'Computer Science', photo: 'women/hopper.png',
+    text: 'Built one of the first compilers and helped create COBOL, making programming closer to human language. Rose to Rear Admiral in the US Navy.' },
+  { name: 'Radia Perlman', years: 'born 1951', field: 'Networking', photo: 'women/perlman.png',
+    text: 'Invented the Spanning Tree Protocol, which lets large networks run without loops. Often called the "Mother of the Internet".' },
+  { name: 'Ada Lovelace', years: '1815 – 1852', field: 'Mathematics', photo: 'women/lovelace.png',
+    text: 'Published what is considered the first computer program, written for Babbage\'s Analytical Engine, and foresaw that machines could do more than calculate.' },
+  { name: 'Margaret Hamilton', years: 'born 1936', field: 'Software Engineering', photo: 'women/hamilton.png',
+    text: 'Led the team that wrote the Apollo flight software at MIT and helped establish "software engineering" as a discipline.' },
+  { name: 'Hedy Lamarr', years: '1914 – 2000', field: 'Invention', photo: 'women/lamarr.png',
+    text: 'Hollywood star who co-invented frequency hopping, an idea that later fed into technologies like Wi-Fi and Bluetooth.' },
+  { name: 'Frances Allen', years: '1932 – 2020', field: 'Compilers', photo: 'women/allen.png',
+    text: 'Pioneer of compiler optimization at IBM and the first woman to receive the Turing Award, in 2006.' },
+  { name: 'Barbara Liskov', years: 'born 1939', field: 'Programming Languages', photo: 'women/liskov.png',
+    text: 'Known for the Liskov substitution principle and data abstraction. Turing Award winner in 2008.' },
+  { name: 'Fei-Fei Li', years: 'born 1976', field: 'Artificial Intelligence', photo: 'women/li.png',
+    text: 'Created ImageNet, the dataset that sparked the deep learning boom in computer vision, and co-founded Stanford\'s Human-Centered AI Institute.' },
+  { name: 'Marie Curie', years: '1867 – 1934', field: 'Physics · Chemistry', photo: 'women/curie.png',
+    text: 'First woman to win a Nobel Prize and still the only person to win Nobel Prizes in two different sciences.' },
+];
+
+const spinBtn   = document.getElementById('spinner-btn');
+const spinCard  = document.getElementById('spinner-card');
+const spinPhoto = document.getElementById('spinner-photo');
+const spinName  = document.getElementById('spinner-name');
+const spinYears = document.getElementById('spinner-years');
+const spinField = document.getElementById('spinner-field');
+const spinText  = document.getElementById('spinner-text');
+let lastIdx = -1;
+
+spinBtn.addEventListener('click', () => {
+  spinBtn.disabled = true;
+  spinCard.classList.add('shuffling');
+  let ticks = 0;
+  const shuffle = setInterval(() => {
+    spinName.textContent = WOMEN[Math.floor(Math.random() * WOMEN.length)].name;
+    if (++ticks > 14) {
+      clearInterval(shuffle);
+      let idx;
+      do { idx = Math.floor(Math.random() * WOMEN.length); } while (idx === lastIdx);
+      lastIdx = idx;
+      const w = WOMEN[idx];
+
+      spinCard.classList.remove('shuffling');
+      spinCard.classList.add('fade');
+      setTimeout(() => {
+        spinPhoto.style.backgroundImage = `url('${w.photo}')`;
+        spinName.textContent  = w.name;
+        spinYears.textContent = w.years;
+        spinField.textContent = w.field;
+        spinText.textContent  = w.text;
+        spinCard.classList.remove('fade');
+      }, 300);
+      setTimeout(() => { spinBtn.disabled = false; }, 600);
+    }
+  }, 80);
+});

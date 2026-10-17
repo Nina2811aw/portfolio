@@ -677,3 +677,25 @@ body.dark .footer-social a { color: var(--muted); }
   object-fit: cover;
   display: block;
 }
+
+.scholarship-band { background: transparent; padding: 3rem 0; margin-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
+.band-title { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em; color: var(--olive); margin-bottom: 2rem; text-align: center; }
+.badge-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; align-items: start; }
+.badge { text-align: center; transition: transform 0.3s; }
+.badge:hover { transform: translateY(-4px); }
+.badge-icon { width: 90px; height: 90px; margin: 0 auto 1rem; border-radius: 50%; border: 2px solid var(--olive); background-color: #fff; background-size: 70%; background-position: center; background-repeat: no-repeat; transition: border-color 0.3s; }
+.badge:hover .badge-icon { border-color: var(--choco); }
+.badge-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; color: var(--light); letter-spacing: 0.03em; line-height: 1.15; }
+
+@media (max-width: 900px) { .badge-row { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 540px) { .badge-row { grid-template-columns: repeat(2, 1fr); } }
+
+.badge-year { font-family: 'DM Mono', monospace; font-size: 0.6rem; color: var(--choco); letter-spacing: 0.1em; margin-top: 0.5rem; }
+.badge-desc { font-family: 'DM Mono', monospace; font-size: 0.6rem; color: var(--olive); line-height: 1.7; margin-top: 0.3rem; }
+
+.program-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.program-card { background: var(--card-bg); padding: 2rem; transition: transform 0.3s; }
+.program-card:hover { transform: scale(1.02); }
+.program-card .project-title { font-size: 1.5rem; }
+@media (max-width: 900px) { .program-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 540px) { .program-grid { grid-template-columns: 1fr; } }
